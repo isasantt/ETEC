@@ -2,3 +2,20 @@
     margin: 0;
     padding: 0;
 }
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header, main {
+    margin: auto;
+    width: 940px;
+}
+
+.menu-cabecalho {
+    background-color: crimson;
+}
+
+.menu-cabecalho a {
+    color: black;
+}
