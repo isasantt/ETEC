@@ -1,2 +1,2 @@
 # ETEC
-Projetos da Etec
+Projetos de Programação Web
