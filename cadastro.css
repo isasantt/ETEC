@@ -24,6 +24,7 @@ body{
     flex-direction: column;
     background-color: white;
     padding: 3rem;
+    border-radius:16px ;
 }
 
 .form-header {
@@ -42,11 +43,11 @@ body{
 .input-box {
     display: flex;
     flex-direction: column;
-    margin-bottom: 0.3rem;
+    margin-bottom: 0.6rem;
 }
 
 .input-box input {
-    margin: 0.2rem 0;
+    margin: 0.10rem 0;
     padding: 0.8rem 1.2rem;
     border: none;
     border-radius:9px ;
@@ -58,14 +59,14 @@ body{
 }
 
 .input-box label {
-    font-size: 0.75rem;
+    font-size: 0.90rem;
     font-weight: 600;
     color: #000;
 }
 
 .continue-button button{
     width: 100%;
-    margin-top: 20%;
+    margin-top: 10%;
     border: none;
     background-color: #d32323;
     padding: 0.62rem;
