@@ -6,6 +6,7 @@ body {
     font-family: sans-serif;
     background-color: rgb(20, 20, 20);
 }
+
 header {
     position: relative;
     background-color: rgb(234, 56, 62);
@@ -32,9 +33,6 @@ header {
     margin-left: 35px;
 }
 
-main {
-    margin: auto;
-    width: 940px;
 .restaurante {
     width: 40%;
     border-radius: 20px;
@@ -42,13 +40,36 @@ main {
     box-shadow: 0 0 5px black;
 }
 .apresentacao {
-    height: 500px;
+    height: 700px;
     color:rgb(234, 56, 62);
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: auto;
 }
 .titulo {
     width: 350px;
     text-align: center;
+}
+
+.textinho {
+    height: 150px;
+    width: 35%;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 0 0 5px black;
+    background-color: rgb(234, 56, 62);
+    display: flex;
+}
+
+.rodape {
+    margin-top: 60px;
+    background-color: rgb(234, 56, 62);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: large;
 }
