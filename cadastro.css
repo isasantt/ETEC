@@ -12,14 +12,14 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #d32323;
+    background-color: rgb(20, 20, 20);
 }
 
 .form {
-    width: 50%;
+    width: 30%;
     height: 80vh;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     flex-direction: column;
     background-color: white;
@@ -32,25 +32,6 @@ body{
     justify-content: space-between;
 }
 
-.login-button {
-    display: flex;
-    align-items: center;
-}
-
-.login-button button {
-    border: none;
-    background-color: #d32323;
-    padding: 0.4rem 1rem;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.login-button button a {
-    text-decoration: none;
-    font-weight: 500;
-    color: white;
-}
-
  .input-group {
     display: flex;
     flex-wrap: wrap;
@@ -61,14 +42,14 @@ body{
 .input-box {
     display: flex;
     flex-direction: column;
-    margin-bottom: 1.1rem;
+    margin-bottom: 0.3rem;
 }
 
 .input-box input {
-    margin: 0.6rem 0;
+    margin: 0.2rem 0;
     padding: 0.8rem 1.2rem;
     border: none;
-    border-radius:10px ;
+    border-radius:9px ;
     box-shadow: 1px 1px 6px #000;
 }
 
@@ -76,38 +57,15 @@ body{
     outline: 1px solid #d32323;
 }
 
-.input-box label,
-.gender-title h6 {
+.input-box label {
     font-size: 0.75rem;
-    font-weight: 600;
-    color: #000;
-}
-
-.gender-group {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 0.62rem;
-    padding: 0 0.5rem;
-}
-
-.gender-input {
-    display: flex;
-    align-items: center;
-}
-
-.gender-input input {
-    margin-right: 0.35rem;
-}
-
-.gender-input label {
-    font-size: 0.81rem;
     font-weight: 600;
     color: #000;
 }
 
 .continue-button button{
     width: 100%;
-    margin-top: 2.5rem;
+    margin-top: 20%;
     border: none;
     background-color: #d32323;
     padding: 0.62rem;
@@ -118,6 +76,6 @@ body{
 .continue-button button a {
     text-decoration: none;
     font-size: 0.93rem;
-    font-weight: 500;
+    font-weight: 400;
     color: white;
  }
