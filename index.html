@@ -1,31 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    <script src="home.js" defer></script>
     <title>RedDragon</title>
 </head>
 <body>
     <header class="cabecalho">
         <img class="logo" src="img/Red Dragon.png" alt="logo-reddragon">
         <strong><nav class="menu-cabecalho">
-            <a href="">Home</a>
+            <a href="index.html">Home</a>
             <a href="">Sobre</a>
-            <a href="">Ajuda</a>
+            <a href="">Ajuda</a>    
             <a href="">Cardápio</a>
             <a href="cadastro.html">Cadastro</a>
         </nav></strong> 
     </header>
     <main>
         <div class="apresentacao">
-            <img src="img/restaurante.png" alt="foto-restaurante" class="restaurante">
+            <div class="carrossel">
+                <div class="container" id="img">
+                    <img src="img/restaurante.png" alt="foto-restaurante">
+                    <img src="img/medieval.jpg" alt="foto-roupas-medievais">
+                    <img src="img/taverna.jpg" alt="foto-taverna">
+                </div>
+            </div>
             <h1 class="titulo">Seja bem-vindo ao Red Dragon's Burguer!</h1>
         </div>
     </main>
-    <footer>
-
-    </footer>
+        <footer class="rodape">
+            <figure>
+                <img class="logo" src="img/Red Dragon.png" alt="logo-reddragon">
+            </figure>
+            <p>Telefone de contato: (XX)XXXXX-XXXX</p>
+            &copy; Todos os direitos reservados ao restaurante Red Dragon's Burguer
+        </footer>
 </body>
 </html>
