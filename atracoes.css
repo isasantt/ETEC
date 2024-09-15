@@ -36,13 +36,28 @@ header {
 }
 
 
+main {
+    color: rgb(234, 56, 62);
+    width: 920px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+p, main figure {
+    padding-bottom: 50px;
+}
+img {
+    border-radius: 10px;
+}
+
+
 .rodape {
     background-color: rgb(234, 56, 62);
     position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-size: large;
+    font-size: medium;
 }
 .contato {
     text-align: right;
