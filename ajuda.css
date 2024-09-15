@@ -35,13 +35,28 @@ header {
 }
 
 
+main {
+    width: 920px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color:rgb(234, 56, 62);
+}
+h1, h2, h3, p {
+    padding-bottom: 50px;
+}
+h1, h2 {
+    text-align: center;
+}
+
+
 .rodape {
     background-color: rgb(234, 56, 62);
     position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-size: large;
+    font-size: medium;
 }
 .contato {
     text-align: right;
