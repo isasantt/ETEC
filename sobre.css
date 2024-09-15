@@ -42,15 +42,20 @@ main {
 }
 p, h1 {
     padding-bottom: 40px;
+    padding-top: 40px;
+}
+img {
+    width: 700px;
+    height: 400px;
+    border-radius: 5px;
 }
 
 .rodape {
     background-color: rgb(234, 56, 62);
-    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-size: large;
+    font-size: medium;
 }
 .contato {
     text-align: right;
