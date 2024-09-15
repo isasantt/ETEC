@@ -66,47 +66,44 @@ header {
 }
 .carrossel {
     overflow: hidden;
-    height: 300px;
-    width: 500px;
+    height: 450px;
+    width: 700px;
     display: inline-flex;
 }
 .carrossel img {
     object-fit: cover;
-    width: 500px;
-    height: 300px;
+    width: 700px;
+    height: 450px;
     border-radius: 20px;
     box-shadow: 0 0 10px black;
 }
 
 .flex {
     display: flex;
-    align-items: baseline;
     justify-content: space-evenly;
-    height: 300px;
+    height: 200px;    
     text-align: center;
+    margin-bottom: 50px;
 }
 .bloco1 {
     background-color:rgb(234, 56, 62);
-    border-radius: 5px;
     width: 300px;
-    height: 200px;
-    justify-content: space-evenly;
+    border-radius: 5px;
+    display: flex;
     align-items: center;
 }
 .bloco2 {
     background-color:rgb(234, 56, 62);
-    border-radius: 5px;
     width: 300px;
-    height: 200px;
-    justify-content: space-evenly;
+    border-radius: 5px;
+    display: flex;
     align-items: center;
 }
 .bloco3 {
     background-color:rgb(234, 56, 62);
-    border-radius: 5px;
     width: 300px;
-    height: 200px;
-    justify-content: space-evenly;
+    border-radius: 5px;
+    display: flex;
     align-items: center;
 }
 
