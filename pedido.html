@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pedido</title>
+    <title>Seu Pedido</title>
     <link rel="stylesheet" href="pedido.css">
+    <script src="pedido.js" defer></script>
 </head>
 <body>
-    <header class="cabecalho">
+    <header>
         <img class="logo" src="img/reddragon.png" alt="logo-reddragon">
         <strong><nav class="menu-cabecalho">
             <a href="index.html">Home</a>
@@ -16,19 +17,21 @@
             <a href="cardapio.html">Cardápio</a>
             <a href="atracoes.html">Atrações</a>
             <a href="cadastro.html">Cadastro</a>
-            <a href="pedido.html"><img src="img/carrinho.png" alt="carrinho" class="carrinho"></a>
+            <a href=""><img src="img/carrinho.png" alt="carrinho" class="carrinho"></a>
         </nav></strong> 
     </header>
     <main>
-
+        <h1>Seu Carrinho</h1>
+        <div id="carrinho" class="carrinho-container">
+        </div>
     </main>
-    <footer class="rodape"></footer>
+    <footer class="rodape">
         <figure>
             <img class="logo" src="img/reddragon.png" alt="logo-reddragon">
         </figure>
         <div class="contato">
-            <small><strong><p>Telefone de contato: (XX)XXXXX-XXXX</p>
-            &copy; Todos os direitos reservados ao restaurante Red Dragon's Burguer</strong></small>
+            <strong>Telefone de contato: (XX)XXXXX-XXXX<br>
+            &copy; Todos os direitos reservados ao restaurante Red Dragon's Burguer</strong>
         </div>
     </footer>
 </body>
