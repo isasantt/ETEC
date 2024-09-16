@@ -9,10 +9,8 @@ function carrossel (){
     if (idx>img.length-1) {
         idx=0;
     }
-
     imgs.style.transform = `translateX(${-idx * 700}px)`;
 }
-
 setInterval(carrossel, 1800);
 
 function startldleTimer() {
@@ -24,4 +22,17 @@ function startldleTimer() {
     document.addEventListener('mousemove', resetTimer);
     document.addEventListener('keypress', resetTimer);
     resetTimer ()
+}
+
+var msgcookies = document.getElementById('cookies-msg')
+
+function aceitar(){
+localStorage.lg = "nome"
+msgcookies.classList.remove('mostrar')
+}
+
+if(localStorage.lg == 'nome'){
+    msgcookies.classList.remove('mostrar')
+} else{
+    msgcookies.classList.add('mostrar')
 }
