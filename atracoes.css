@@ -8,15 +8,16 @@ body{
     background-color: rgb(20, 20, 20);
 }
 
-
 header {
     position: relative;
     background-color: rgb(234, 56, 62);
 }
+
 .carrinho {
     width: 25px;
     height: 25px;
 }
+
 .menu-cabecalho {
     height: 100px;
     float: right;
@@ -27,18 +28,19 @@ header {
     justify-content: space-between;
     font-size: large;
 }
+
 .menu-cabecalho a {
     color: black;
     display: inline-block;
     padding-left: 20px;
     text-decoration: none;
 }
+
 .logo {
     width: 220px;
     height: 100px;
     margin-left: 35px;
 }
-
 
 main {
     color: rgb(234, 56, 62);
@@ -47,13 +49,14 @@ main {
     margin-top: 50px;
     margin-bottom: 50px;
 }
+
 p, main figure {
     padding-bottom: 50px;
 }
+
 img {
     border-radius: 10px;
 }
-
 
 .rodape {
     background-color: rgb(234, 56, 62);
@@ -63,6 +66,7 @@ img {
     justify-content: space-between;
     font-size: medium;
 }
+
 .contato {
     text-align: right;
     margin-right: 25px;
