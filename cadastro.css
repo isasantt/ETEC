@@ -109,7 +109,7 @@ h1 {
     font-weight: bold;
 }
 
-.login-link2 button {
+.login-link2 button, .login-link2 a {
     text-decoration: none; 
     font-weight: bold;
     border-radius: 60px;
@@ -126,4 +126,22 @@ h1 {
 
 .login-link a:hover {
     text-decoration: underline; 
+}
+
+.cadastrob button {
+    background-color: #ff4c4c;
+    padding: 15px 125px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    color: #ff4c4c;
+    border-radius: 15px;
+
+}
+
+.cadastrob a {
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
 }
