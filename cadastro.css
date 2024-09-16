@@ -136,8 +136,14 @@ h1 {
     font-weight: bold;
     color: #ff4c4c;
     border-radius: 15px;
-
+    cursor: pointer;
+    transition: 0.2s;
 }
+
+.cadastrob button:hover{
+    transform: scale(0.9);
+}
+
 
 .cadastrob a {
     text-align: center;
@@ -145,3 +151,4 @@ h1 {
     color: black;
     font-weight: bold;
 }
+
