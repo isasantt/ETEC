@@ -11,6 +11,9 @@ body {
 header {
     background-color: rgb(234, 56, 62);
 }
+main {
+    height: 1000px;
+}
 .carrinho {
     width: 25px;
     height: 25px;
