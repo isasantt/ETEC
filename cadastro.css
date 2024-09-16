@@ -30,6 +30,11 @@ h1 {
     text-align: center;
 }
 
+
+
+
+
+
 .form-group {
     margin-bottom: 15px;
 }
@@ -104,10 +109,11 @@ h1 {
     font-weight: bold;
 }
 
-.login-link2 a {
-    color: #ff4c4c;
+.login-link2 button {
     text-decoration: none; 
     font-weight: bold;
+    border-radius: 15px;
+    background-color:#ff4c4c;
 }
 
 .login-link a:hover {
