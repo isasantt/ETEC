@@ -1,17 +1,17 @@
 const imgs = document.getElementById("img");
 const img = document.querySelectorAll("#img img");
 
-let idx = 0;
+let indice = 0;
 //indice da imagem
 
 function carrossel (){
-    idx++;
+    indice++;
 
-    if (idx>img.length-1) {
-        idx=0;
+    if (indice>img.length-1) {
+        indice=0;
     }
 //se o índice exceder o número de imagens, reinicia o índice
-    imgs.style.transform = `translateX(${-idx * 700}px)`;
+    imgs.style.transform = `translateX(${-indice * 700}px)`;
 }
 
 // Atualiza a posição do carrossel para mostrar a imagem correspondente ao índice
