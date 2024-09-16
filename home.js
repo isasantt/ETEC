@@ -2,6 +2,7 @@ const imgs = document.getElementById("img");
 const img = document.querySelectorAll("#img img");
 
 let idx = 0;
+//indice da imagem
 
 function carrossel (){
     idx++;
@@ -9,10 +10,11 @@ function carrossel (){
     if (idx>img.length-1) {
         idx=0;
     }
-
+//se o índice exceder o número de imagens, reinicia o índice
     imgs.style.transform = `translateX(${-idx * 700}px)`;
 }
 
+// Atualiza a posição do carrossel para mostrar a imagem correspondente ao índice
 setInterval(carrossel, 1800);
 
 function startldleTimer() {
@@ -35,6 +37,8 @@ msgcookies.classList.remove('mostrar')
 
 if(localStorage.lg == 'nome'){
     msgcookies.classList.remove('mostrar')
+    //remove a mensagem aceitada
 } else{
     msgcookies.classList.add('mostrar')
+        //exibe a mensagem
 }
