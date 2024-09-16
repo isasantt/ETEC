@@ -9,8 +9,10 @@ function carrossel (){
     if (idx>img.length-1) {
         idx=0;
     }
+
     imgs.style.transform = `translateX(${-idx * 700}px)`;
 }
+
 setInterval(carrossel, 1800);
 
 function startldleTimer() {
