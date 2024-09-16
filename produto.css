@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: sans-serif;
+    background-color: rgb(20, 20, 20);
+}
+
+header {
+    background-color: rgb(234, 56, 62);
+}
+.carrinho {
+    width: 25px;
+    height: 25px;
+}
+.menu-cabecalho {
+    height: 100px;
+    float: right;
+    margin-right: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: large;
+}
+.menu-cabecalho a {
+    color: black;
+    padding-left: 20px;
+    text-decoration: none;
+}
+.logo {
+    width: 220px;
+    height: 100px;
+    margin-left: 35px;
+}
+
+.produto-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 920px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #2c2c2c;
+    border-radius: 10px;
+}
+.produto-container h1 {
+    color:rgb(234, 56, 62);
+}
+
+.produto-imagem img {
+    width: 350px;
+    border-radius: 10px;
+}
+
+.produto-detalhes {
+    max-width: 500px;
+    text-align: left;
+}
+
+.produto-detalhes h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.produto-detalhes .preco {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: rgb(234, 56, 62);
+    margin-bottom: 15px;
+}
+
+.produto-detalhes .descricao {
+    font-size: 1.1em;
+    font-weight: bold;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #e74c3c;
+    color: black;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 30px; 
+    border: 2px solid transparent; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); 
+    transition: all 0.3s ease;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #c0392b;
+    transform: scale(1.05); 
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4); 
+}
+
+.confirmacao {
+    margin-top: 20px;
+    visibility: hidden;
+}
+
+.rodape {
+    background-color: rgb(234, 56, 62);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 25px;
+}
+.contato {
+    text-align: right;
+}
