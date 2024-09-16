@@ -112,8 +112,9 @@ h1 {
 .login-link2 button {
     text-decoration: none; 
     font-weight: bold;
-    border-radius: 15px;
+    border-radius: 60px;
     background-color:#ff4c4c;
+    padding: 20px;
 }
 
 .login-link a:hover {
