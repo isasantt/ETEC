@@ -33,6 +33,11 @@ header {
     height: 100px;
     margin-left: 35px;
 }
+.carrinho {
+    width: 25px;
+    height: 25px;
+}
+
 .apresentacao {
     color:rgb(234, 56, 62);
     height: 600px;
@@ -41,6 +46,7 @@ header {
     justify-content: center;
     margin: auto;
 }
+
 .titulo {
     width: 350px;
     text-align: 
@@ -57,6 +63,7 @@ header {
     background-color: rgb(234, 56, 62);
     display: flex;
 }
+
 .container {
     display: flex;
     transition: transform 1s ease-in-out;
@@ -75,6 +82,7 @@ header {
     border-radius: 20px;
     box-shadow: 0 0 10px black;
 }
+
 .flex {
     display: flex;
     justify-content: space-evenly;
@@ -113,7 +121,7 @@ header {
     transform: translate(-50%);
     border-radius: 15px;
     display: none;
-
+    position: absolute;
 }
 
 .cookies-msg.mostrar{
@@ -147,12 +155,12 @@ display: block;
 
 .rodape {
     background-color: rgb(234, 56, 62);
-    position: relative;
     position: absolute;
     display: flex;
     align-items: center;
     justify-content: space-between;
     font-size: large;
+    width: 100%;
 }
 .contato {
     text-align: right;
