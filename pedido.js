@@ -1,8 +1,9 @@
+// Código para carregar o conteúdo do carrinho quando a página é carregada
 document.addEventListener('DOMContentLoaded', function() {
     const carrinhoContainer = document.getElementById('carrinho');
-
+    // Seleciona o contêiner do carrinho
     const produto = JSON.parse(localStorage.getItem('produto'));
-
+    // Obtém o produto armazenado em localStorage
     if (produto) {
         carrinhoContainer.innerHTML = `
             <div class="produto-carrinho">
@@ -17,8 +18,10 @@ document.addEventListener('DOMContentLoaded', function() {
     } else {
         carrinhoContainer.innerHTML = "<p>Seu carrinho está vazio.</p>";
     }
+        // Se não houver produto armazenado, exibe uma mensagem de carrinho vazio
 
     document.getElementById('finalizarPedido')?.addEventListener('click', function() {
+                // Adiciona um evento ao botão de finalizar pedido
         alert("Pedido finalizado com sucesso!");
         localStorage.removeItem('produto'); 
         window.location.href = "index.html"; 
