@@ -44,6 +44,7 @@ main {
     color: rgb(234, 56, 62);
     margin-top: 50px;
     font-weight: bold;
+    font-size:large;
 }
 h1 {
     padding-bottom: 20px;
@@ -71,6 +72,7 @@ h1 {
 figure {
     margin-bottom: 10px;
 }
+
 
 
 .rodape {
