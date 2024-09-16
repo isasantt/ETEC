@@ -10,7 +10,18 @@ function carrossel (){
         idx=0;
     }
 
-    imgs.style.transform = `translateX(${-idx * 500}px)`;
+    imgs.style.transform = `translateX(${-idx * 700}px)`;
 }
 
 setInterval(carrossel, 1800);
+
+function startldleTimer() {
+    let timeout;
+    function resetTimer() {
+        clearTimeout(timeout);
+        timeout = setTimeout(() => alert("Você ficou inativo por mais de 3 minutos!"), 3 * 60 * 1000);
+    }
+    document.addEventListener('mousemove', resetTimer);
+    document.addEventListener('keypress', resetTimer);
+    resetTimer ()
+}
