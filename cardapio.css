@@ -3,23 +3,26 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     font-family: sans-serif;
     background-color: rgb(20, 20, 20);
 }
 
-
 header {
     background-color: rgb(234, 56, 62);
 }
+
 .carrinho {
     width: 25px;
     height: 25px;
 }
+
 .carrinho {
     width: 25px;
     height: 25px;
 }
+
 .menu-cabecalho {
     height: 100px;
     float: right;
@@ -29,17 +32,18 @@ header {
     justify-content: space-between;
     font-size: large;
 }
+
 .menu-cabecalho a {
     color: black;
     padding-left: 20px;
     text-decoration: none;
 }
+
 .logo {
     width: 220px;
     height: 100px;
     margin-left: 35px;
 }
-
 
 main {
     width: 920px;
@@ -50,9 +54,11 @@ main {
     font-weight: bold;
     font-size:large;
 }
+
 h1 {
     padding-bottom: 20px;
 }
+
 .painel {
     display: flex;
     justify-content: center;
@@ -60,24 +66,26 @@ h1 {
     list-style-type: none;
     padding: 20px;
 }
+
 .painel img {
     border-radius: 10px;
     width: 300px;
     transition: transform 0.3s ease;
 }
+
 .painel img:hover {
     transform: scale(1.05);
 }
+
 .painel figcaption {
     font-size: 13px;
     text-align: center;
     margin-top: 5px;
 }
+
 figure {
     margin-bottom: 10px;
 }
-
-
 
 .rodape {
     background-color: rgb(234, 56, 62);
@@ -86,6 +94,7 @@ figure {
     justify-content: space-between;
     padding: 10px 25px;
 }
+
 .contato {
     text-align: right;
 }
