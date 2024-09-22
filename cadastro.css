@@ -26,7 +26,7 @@ body {
 h1 {
     font-size: 1.6em;
     margin-bottom: 20px;
-    color: #ff4c4c;
+    color: rgb(121, 5, 5);
     text-align: center;
 }
 
@@ -69,7 +69,7 @@ background-repeat: no-repeat;
 }
 
 .form-group input:focus {
-    border-color: #ff4c4c; 
+    border-color:rgb(121, 5, 5); 
     outline: none;
     box-shadow: 0 0 0 2px rgba(255, 76, 76, 0.5);
 }
@@ -77,7 +77,7 @@ background-repeat: no-repeat;
 .form-group button {
     width: 100%;
     padding: 12px;
-    background-color: #ff4c4c; 
+    background-color:rgb(121, 5, 5); 
     color: #ffffff;
     border: none;
     border-radius: 6px;
@@ -87,7 +87,7 @@ background-repeat: no-repeat;
 }
 
 .form-group button:hover {
-    background-color: #e04343
+    background-color: rgb(121, 5, 5)
 }
 
 .overlay {
@@ -101,31 +101,16 @@ background-repeat: no-repeat;
     z-index: 999;
 }
 
-.login-link {
-    margin-top: 20px;
-    text-align: center;
-}
-
 .login-link2 {
     margin-top: 20px;
     text-align: center;
-}
-
-.login-link p {
-    color: #ffffff;
-}
-
-.login-link a {
-    color: #ff4c4c;
-    text-decoration: none; 
-    font-weight: bold;
 }
 
 .login-link2 button, .login-link2 a {
     text-decoration: none; 
     font-weight: bold;
     border-radius: 60px;
-    background-color:#ff4c4c;
+    background-color:rgb(121, 5, 5);
     padding: 20px;
     cursor: pointer;
     transition: 0.2s;
@@ -136,13 +121,8 @@ background-repeat: no-repeat;
     transform: scale(0.9);
 }
 
-
-.login-link a:hover {
-    text-decoration: underline; 
-}
-
 .cadastrob button {
-    background-color: #ff4c4c;
+    background-color: rgb(121, 5, 5);
     color: black;
     padding: 15px 125px;
     text-align: center;
@@ -160,11 +140,11 @@ background-repeat: no-repeat;
 
 
 .erro-mensagem {
-    color: #ff4c4c;
+    color: rgb(121, 5, 5);
     font-size: 0.9em;
     margin-top: 5px;
 }
 
 .erro {
-    border: 1px solid #ff4c4c;
+    border: 1px solid rgb(121, 5, 5);
 }
