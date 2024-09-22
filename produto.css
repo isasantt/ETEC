@@ -3,13 +3,12 @@
     src: url(fallingskybd-webfont.woff2);
 }
 
-
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     font-family: sans-serif;
     background-color: rgb(12, 11, 11);
@@ -24,10 +23,12 @@ header {
 main {
     height: 800px;
 }
+
 .carrinho {
     width: 25px;
     height: 25px;
 }
+
 .menu-cabecalho {
     height: 100px;
     float: right;
@@ -37,16 +38,19 @@ main {
     justify-content: space-between;
     font-size: large;
 }
+
 .menu-cabecalho a {
     color: black;
     padding-left: 20px;
     text-decoration: none;
 }
+
 .logo {
     width: 220px;
     height: 100px;
     margin-left: 35px;
 }
+
 main {
     width: 1750px;
     margin: auto;
@@ -55,20 +59,20 @@ main {
     font-weight: bold;
     font-size:large;
 }
+
 .produto {
     display: flex;
-    justify-content: space-between;
-    
+    justify-content: space-between;    
 }
+
 .produto img {
     left: 200px;
     width: 800px;
     border-radius: 0%;
     transition: transform 0.3s ease;
     border: 10px solid rgb(56, 56, 56)
-
-
 }
+
 .produto img:hover {
     transform: scale(1.05);
 }
@@ -88,8 +92,7 @@ main {
     border-top-right-radius: 10px;
 }
 
-.templario{ 
-    
+.templario { 
     background-color: #3d3d3d;
     padding-left: 195px;
     padding-right: 191px;
@@ -102,13 +105,9 @@ main {
     color: #a33e3e;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-
-
-
 }
 
-.Ragnarok{ 
-    
+.Ragnarok { 
     background-color: #3d3d3d;
     padding-left: 199px;
     padding-right: 200px;
@@ -121,9 +120,6 @@ main {
     color: #a33e3e;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-
-
-
 }
 
 .Paladino {
@@ -156,8 +152,6 @@ main {
     border-top-right-radius: 10px;
 }
 
-
-
 .produto  h1 {
     background-color: #3d3d3d;
     padding-left: 175px;
@@ -173,7 +167,6 @@ main {
     border-top-right-radius: 10px;
 }
 
-
 .produto p{
     background-color: #3d3d3d;
     width: 700px;
@@ -182,9 +175,7 @@ main {
     margin-bottom: 90px;
     top: 400px;
     border-radius: 10px;
-
 }
-
 
 .produto p{
     text-align: justify;
@@ -193,13 +184,11 @@ main {
     font-size: 20px;
 }
 
-.adicionarCarrinho{
-
+.adicionarCarrinho {
 left: 530px;
 bottom: 50px;
-
-
 }
+
 button {
     display: inline-block;
     padding: 20px 90px;
@@ -234,6 +223,7 @@ button:hover {
     justify-content: space-between;
     padding: 10px 25px;
 }
+
 .contato {
     text-align: right;
 }
