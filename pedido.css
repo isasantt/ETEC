@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     font-family: sans-serif;
     background-color: rgb(20, 20, 20);
@@ -15,6 +16,7 @@ header {
     width: 25px;
     height: 25px;
 }
+
 .menu-cabecalho {
     height: 100px;
     float: right;
@@ -24,11 +26,13 @@ header {
     justify-content: space-between;
     font-size: large;
 }
+
 .menu-cabecalho a {
     color: black;
     padding-left: 20px;
     text-decoration: none;
 }
+
 .logo {
     width: 220px;
     height: 100px;
