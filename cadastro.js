@@ -1,38 +1,88 @@
-document.getElementById('registrationForm').addEventListener('submit', function(event) {
-    event.preventDefault(); // Impede o envio padrão do formulário
+document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("registrationForm").addEventListener("submit", function(event) {
+        event.preventDefault();
 
-    // Captura os dados do formulário
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const password = document.getElementById('password').value;
+        const nome = document.getElementById("nome");
+        const email = document.getElementById("email");
+        const senha = document.getElementById("senha");
 
-    // Validação simples
-    if (!name || !email || !password) {
-        document.getElementById('message').textContent = 'Todos os campos são obrigatórios';
-        return;
+        // limpa erros
+        nome.classList.remove('erro');
+        email.classList.remove('erro');
+        senha.classList.remove('erro');
+
+        document.getElementById("nomeErro").textContent = '';
+        document.getElementById("emailErro").textContent = '';
+        document.getElementById("senhaErro").textContent = '';
+
+        let valido = true;
+
+        // validação do nome
+        if (nome.value.trim() === "") {
+            document.getElementById("nomeErro").textContent = "Nome é obrigatório.";
+            nome.classList.add("erro");
+            valido = false;
+        }
+
+        // validação do email
+        if (!validarEmail(email.value)) {
+            document.getElementById("emailErro").textContent = "Email inválido.";
+            email.classList.add("erro");
+            valido = false;
+        }
+
+        // validação da senha
+        const senhaErroMsg = validarSenha(senha.value);
+        if (senhaErroMsg.length > 0) {
+            document.getElementById("senhaErro").textContent = senhaErroMsg.join(" ");
+            senha.classList.add("erro");
+            valido = false;
+        }
+
+        // redirecionamento após validação
+        if (valido) {
+            alert("Cadastro realizado com sucesso!");
+            setTimeout(function() {
+                window.location.href = "index.html"; 
+            }, 1000); // redireciona após 1 (um) segundo
+        }
+    });
+
+    // validação do email
+    function validarEmail(email) {
+        const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return re.test(email);
     }
 
-    // Envia os dados para o backend
-    fetch('/register', { // Endpoint do servidor para registro
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({ name, email, password })
-    })
-    .then(response => response.json())
-    .then(data => {
-        if (data.success) {
-            // Sucesso: exibe uma mensagem e redireciona
-            document.getElementById('message').textContent = 'Cadastro bem-sucedido';
-            window.location.href = '/login.html'; // Redireciona para a página de login
-        } else {
-            // Exibe uma mensagem de erro
-            document.getElementById('message').textContent = data.message || 'Ocorreu um erro ao tentar se cadastrar';
+    // validação da senha
+    function validarSenha(senha) {
+        const minTamanho = 6;
+        const temMaiuscula = /[A-Z]/.test(senha);
+        const temMinuscula = /[a-z]/.test(senha);
+        const temNumero = /\d/.test(senha);
+        const temEspecial = /[!@#$%^&*(),.?":{}|<>]/.test(senha);
+        const temEspaco = /^\S*$/.test(senha);
+
+        let mensagemErro = [];
+
+        if (senha.length < minTamanho) {
+            mensagemErro.push("A senha precisa de, no mínimo, 6 caracteres.");
         }
-    })
-    .catch(error => {
-        console.error('Erro:', error);
-        document.getElementById('message').textContent = 'Ocorreu um erro ao tentar se cadastrar';
-    });
+        if (!temMaiuscula) {
+            mensagemErro.push("A senha precisa de, no mínimo, uma letra maiúscula.");
+        }
+        if (!temMinuscula) {
+            mensagemErro.push("A senha precisa de, no mínimo, uma letra minúscula.");
+        }
+        if (!temNumero) {
+            mensagemErro.push("A senha precisa de, no mínimo, um número.");
+        }
+        if (!temEspecial) {
+            mensagemErro.push("A senha precisa de, no mínimo, um caractere especial.");
+        } 
+        if (!temEspaco) {
+            mensagemErro.push("A senha não pode conter espaços.");
+        }
+        return mensagemErro;
+    }
 });
