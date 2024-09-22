@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    document.getElementById("registrationForm").addEventListener("submit", function(event) {
+    document.getElementById("formulario").addEventListener("submit", function(event) {
         event.preventDefault();
 
         const nome = document.getElementById("nome");
@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function() {
         if (valido) {
             alert("Cadastro realizado com sucesso!");
             setTimeout(function() {
-                window.location.href = "index.html"; 
+                window.location.href = "home.html"; 
             }, 1000); // redireciona após 1 (um) segundo
         }
     });
