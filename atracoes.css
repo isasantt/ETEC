@@ -10,7 +10,7 @@ body{
 
 header {
     position: relative;
-    background-color: rgb(234, 56, 62);
+    background-color: rgb(121, 5, 5);
 }
 
 .carrinho {
@@ -59,7 +59,7 @@ img {
 }
 
 .rodape {
-    background-color: rgb(234, 56, 62);
+    background-color: rgb(121, 5, 5);
     position: relative;
     display: flex;
     align-items: center;
