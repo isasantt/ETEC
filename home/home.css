@@ -136,7 +136,7 @@
     border-radius: 15px;
     display: none;
     
-        position: absolute;
+        position: fixed;
     }
     
     .cookies-msg.mostrar{
