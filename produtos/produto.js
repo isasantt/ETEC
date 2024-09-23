@@ -21,6 +21,6 @@ document.querySelectorAll('.adicionarCarrinho').forEach(function(botao) {
         }, 3000);
 
                 // Redireciona o usuário para a página de pedido
-        window.location.href = "pedido.html";
+        window.location.href = "../pedido/pedido.html";
     });
 });

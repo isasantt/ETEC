@@ -25,6 +25,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 // Adiciona um evento ao botão de finalizar pedido
         alert("Pedido finalizado com sucesso!");
         localStorage.removeItem('produto'); 
-        window.location.href = "home.html"; 
+        window.location.href = "../home/home.html"; 
     });
 });

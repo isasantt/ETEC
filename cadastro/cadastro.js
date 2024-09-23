@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function() {
         if (valido) {
             alert("Cadastro realizado com sucesso!");
             setTimeout(function() {
-                window.location.href = "home.html"; 
+                window.location.href = "../home/home.html"; 
             }, 1000); // redireciona após 1 (um) segundo
         }
     });
