@@ -3,7 +3,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const carrinhoContainer = document.getElementById('carrinho');
     // Seleciona o contêiner do carrinho
     const produto = JSON.parse(localStorage.getItem('produto'));
-    // Obtém o produto armazenado em localStorage
+
+
     if (produto) {
         carrinhoContainer.innerHTML = `
             <div class="produto-carrinho">

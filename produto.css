@@ -18,10 +18,10 @@ body {
 
 header {
     background-color: rgb(153, 53, 53);
-
 }
+
 main {
-    height: 800px;
+    height: 100%;
 }
 
 .carrinho {
@@ -52,23 +52,27 @@ main {
 }
 
 main {
-    width: 1750px;
     margin: auto;
     text-align: center;
     margin-top: 90px;
+    margin-bottom: 90px;
     font-weight: bold;
     font-size:large;
 }
 
-.produto {
-    display: flex;
-    justify-content: space-between;    
+.produto-container {
+    justify-content: space-evenly; 
+    margin: auto;   
+    display: inline-block;
 }
 
 .produto img {
-    left: 200px;
-    width: 800px;
-    border-radius: 0%;
+    background-color: #3d3d3d;
+    font-size: 50px;
+    font-family: book;
+    text-align: justify;
+    color: #a33e3e;
+    width: 600px;
     transition: transform 0.3s ease;
     border: 10px solid rgb(56, 56, 56)
 }
@@ -77,117 +81,28 @@ main {
     transform: scale(1.05);
 }
 
-.pocao {
+h1 {
     background-color: #3d3d3d;
-    padding-left: 155px;
-    padding-right: 147px;
-    bottom: 610px;
-    position: absolute;
-    margin-left: 1050px;
-    font-size: 60px;
-    font-family: book;
-    text-align: justify;
+    width: 600px;
     color: #a33e3e;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-}
-
-.templario { 
-    background-color: #3d3d3d;
-    padding-left: 195px;
-    padding-right: 191px;
-    bottom: 610px;
-    position: absolute;
-    margin-left: 1050px;
-    font-size: 60px;
-    font-family: book;
-    text-align: justify;
-    color: #a33e3e;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
-
-.Ragnarok { 
-    background-color: #3d3d3d;
-    padding-left: 199px;
-    padding-right: 200px;
-    bottom: 610px;
-    position: absolute;
-    margin-left: 1050px;
-    font-size: 60px;
-    font-family: book;
-    text-align: justify;
-    color: #a33e3e;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
-
-.Paladino {
-    background-color: #3d3d3d;
-    padding-left: 155px;
-    padding-right: 130px;
-    bottom: 610px;
-    position: absolute;
-    margin-left: 1050px;
-    font-size: 60px;
-    font-family: book;
-    text-align: justify;
-    color: #a33e3e;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
-
-.Elfo {
-    background-color: #3d3d3d;
-    padding-left: 165px;
-    padding-right: 155px;
-    bottom: 610px;
-    position: absolute;
-    margin-left: 1050px;
-    font-size: 60px;
-    font-family: book;
-    text-align: justify;
-    color: #a33e3e;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
-
-.produto  h1 {
-    background-color: #3d3d3d;
-    padding-left: 175px;
-    padding-right: 147px;
-    bottom: 610px;
-    position: absolute;
-    margin-left: 1050px;
-    font-size: 60px;
-    font-family: book;
-    text-align: justify;
-    color: #a33e3e;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    margin: auto;
 }
 
 .produto p{
     background-color: #3d3d3d;
-    width: 700px;
-    padding: 50px;
-    margin-top: 120px;
-    margin-bottom: 90px;
-    top: 400px;
-    border-radius: 10px;
-}
-
-.produto p{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
     text-align: justify;
     color: #d4d4d4;
     font-family: sans-serif;
     font-size: 20px;
+    width: 600px;
+    padding: 10px;
+    margin: auto;
 }
 
-.adicionarCarrinho {
-left: 530px;
-bottom: 50px;
-}
 
 button {
     display: inline-block;
@@ -203,7 +118,7 @@ button {
     cursor: pointer;
     font-weight: bold;
     position: relative;
-    }
+}
 
 button:hover {
     background-color: #e9e9e9;
@@ -215,6 +130,8 @@ button:hover {
     margin-top: 20px;
     visibility: hidden;
 }
+
+
 
 .rodape {
     background-color:  rgb(153, 53, 53);
