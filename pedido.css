@@ -6,8 +6,8 @@
 
 body {
     font-family: sans-serif;
-    background-color: rgb(20, 20, 20);
-}
+    background-image: url(img/fu.png);
+    background-repeat: repeat;}
 
 header {
     background-color: rgb(121, 5, 5);
@@ -43,13 +43,20 @@ main {
     width: 920px;
     margin: 50px auto;
     text-align: center;
-    height: 1000px;
+    height: 900px;
 }
 
 h1 {
     font-size: 2.5em;
     color: rgb(121, 5, 5);
     margin-bottom: 30px;
+    text-align: center;
+    background-color: #1a1919de;
+    border-radius: 10px;
+    padding: 10px;
+    width: 300px;
+    margin: auto;
+    margin-bottom: 20px;
 }
 
 .carrinho-container {
