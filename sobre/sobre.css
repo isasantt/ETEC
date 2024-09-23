@@ -12,7 +12,7 @@
 }
 
 .texto .texto1 {
-        background-color: rgb(49, 49, 49);     
+        background-color: #1a1919de;     
         border-radius: 10px;  
        padding: 20px;
        align-items: center;
@@ -21,7 +21,7 @@
 }
 
 .texto .texto2 {
-    background-color: rgb(49, 49, 49);     
+    background-color: #1a1919de;     
     border-radius: 10px;  
    padding: 20px;
    align-items: center;
@@ -30,7 +30,7 @@
 }
 
 .texto .texto3 {
-    background-color: rgb(49, 49, 49);     
+    background-color: #1a1919de;     
     border-radius: 10px;  
    padding: 20px;
    align-items: center;
@@ -52,7 +52,6 @@
 .cookies-msg.mostrar {
     display: block;
 }
-
 
 .cookies-msg .cookies-txt {
     display: flex;
