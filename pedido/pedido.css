@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-image: url(img/fu.png);
+    background-repeat: repeat;}
+
+header {
+    background-color: rgb(121, 5, 5);
+}
+.carrinho {
+    width: 25px;
+    height: 25px;
+}
+
+.menu-cabecalho {
+    height: 100px;
+    float: right;
+    margin-right: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: large;
+}
+
+.menu-cabecalho a {
+    color: black;
+    padding-left: 20px;
+    text-decoration: none;
+}
+
+.logo {
+    width: 220px;
+    height: 100px;
+    margin-left: 35px;
+}
+
+main {
+    width: 920px;
+    margin: 50px auto;
+    text-align: center;
+    height: 900px;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: rgb(121, 5, 5);
+    margin-bottom: 30px;
+    text-align: center;
+    background-color: #1a1919de;
+    border-radius: 10px;
+    padding: 10px;
+    width: 300px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.carrinho-container {
+    background-color: #2c2c2c;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    margin: auto;
+}
+
+.produto-carrinho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.produto-carrinho img {
+    width: 150px;
+    border-radius: 10px;
+}
+
+.detalhes h2 {
+    font-size: 1.8em;
+    color: #f4f4f4;
+}
+
+.detalhes p {
+    font-size: 1.2em;
+    color: rgb(121, 5, 5);
+}
+
+.botao {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: rgb(121, 5, 5);
+    color: black;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 30px; 
+    border: 2px solid transparent; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); 
+    transition: all 0.3s ease;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.botao:hover {
+    background-color: rgb(121, 5, 5);
+    transform: scale(1.05); 
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4); 
+}
+
+.rodape {
+    background-color:rgb(121, 5, 5);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 25px;
+}
+.contato {
+    text-align: right;
+}

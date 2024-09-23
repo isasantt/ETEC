@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chá de Hibisco</title>
+    <link rel="stylesheet" href="produto.css">
+    <script src="produto.js" defer></script>
+</head>
+<body>
+    <header>
+        <img class="logo" src="img/reddragon.png" alt="logo-reddragon">
+        <strong><nav class="menu-cabecalho">
+            <a href="home.html">Home</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="ajuda.html">Ajuda</a>    
+            <a href="cardapio.html">Cardápio</a>
+            <a href="atracoes.html">Atrações</a>
+            <a href="cadastro.html">Cadastro</a>
+            <a href="pedido.html"><img src="img/carrinho.png" alt="carrinho" class="carrinho"></a>
+        </nav></strong> 
+    </header>
+    <main>
+        <div class="produto-container">
+                <li>
+                    <figure>
+                        <div class="produto">
+                            <img src="img/cardapio/bebida.jpg">
+                            <h1>       Chá de Hibisco</h1>
+                           
+                            <p>Nosso Chá de Hibisco Medieval é uma poção refrescante e vibrante, perfeita
+                                para saciar a sede dos nobres e cavaleiros após longas jornadas.
+                                Com sua coloração avermelhada intensa, esta bebida remete à força dos guerreiros e
+                                à vitalidade das damas da corte. Feito com flores de hibisco
+                                cuidadosamente selecionadas, o chá possui um sabor levemente ácido,
+                                equilibrado com notas florais e um toque suave de mel, como nos tempos antigos.
+                                Sirva-se desta poção e sinta a energia renovadora que há muito encantou reis e feiticeiros!</p>
+                         </div>
+                    </figure>
+                </li>
+            </div>
+            <div>
+                <button class="adicionarCarrinho" 
+                data-nome="Chá de Hibisco" 
+                data-preco="10.00" 
+                data-imagem="img/cardapio/bebida.jpg">
+                Adicionar ao Carrinho
+            </button>                        
+            <p id="confirmacao" class="confirmacao"></p>
+            </div>
+        </div>
+    </main>
+    <footer class="rodape">
+        <figure>
+            <img class="logo" src="img/reddragon.png" alt="logo-reddragon">
+        </figure>
+        <div class="contato">
+            <strong>Telefone de contato: (XX)XXXXX-XXXX<br>
+            &copy; Todos os direitos reservados ao restaurante Red Dragon's Burguer</strong>
+        </div>
+    </footer>
+</body>
+</html>
