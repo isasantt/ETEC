@@ -10,7 +10,7 @@ body {
 }
 
 header {
-    background-color: rgb(234, 56, 62);
+    background-color: rgb(121, 5, 5);
 }
 .carrinho {
     width: 25px;
@@ -48,7 +48,7 @@ main {
 
 h1 {
     font-size: 2.5em;
-    color: rgb(234, 56, 62);
+    color: rgb(121, 5, 5);
     margin-bottom: 30px;
 }
 
@@ -80,13 +80,13 @@ h1 {
 
 .detalhes p {
     font-size: 1.2em;
-    color: rgb(234, 56, 62);
+    color: rgb(121, 5, 5);
 }
 
 .botao {
     display: inline-block;
     padding: 12px 24px;
-    background-color: #e74c3c;
+    background-color: rgb(121, 5, 5);
     color: black;
     text-decoration: none;
     font-size: 1.2em;
@@ -99,13 +99,13 @@ h1 {
 }
 
 .botao:hover {
-    background-color: #c0392b;
+    background-color: rgb(121, 5, 5);
     transform: scale(1.05); 
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4); 
 }
 
 .rodape {
-    background-color: rgb(234, 56, 62);
+    background-color:rgb(121, 5, 5);
     display: flex;
     align-items: center;
     justify-content: space-between;

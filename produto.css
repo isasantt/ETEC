@@ -17,7 +17,7 @@ body {
 }
 
 header {
-    background-color: rgb(153, 53, 53);
+    background-color: rgb(121, 5, 5);
 }
 
 main {
@@ -71,7 +71,7 @@ main {
     font-size: 50px;
     font-family: book;
     text-align: justify;
-    color: #a33e3e;
+    color: rgb(121, 5, 5);
     width: 600px;
     transition: transform 0.3s ease;
     border: 10px solid rgb(56, 56, 56)
@@ -84,7 +84,7 @@ main {
 h1 {
     background-color: #3d3d3d;
     width: 600px;
-    color: #a33e3e;
+    color: rgb(121, 5, 5);
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     margin: auto;
@@ -107,7 +107,7 @@ h1 {
 button {
     display: inline-block;
     padding: 20px 90px;
-    background-color: #a33e3e;
+    background-color: rgb(121, 5, 5);
     color: rgb(223, 222, 222);
     text-decoration: none;
     font-size: 1.2em;
@@ -134,7 +134,7 @@ button:hover {
 
 
 .rodape {
-    background-color:  rgb(153, 53, 53);
+    background-color:  rgb(121, 5, 5);
     display: flex;
     align-items: center;
     justify-content: space-between;
