@@ -7,6 +7,8 @@ body{
     font-family: sans-serif;
     background-image: url(img/fu.png);
     background-repeat: repeat;
+    margin: auto;
+    text-align: center;
 }
 
 header {
@@ -51,7 +53,7 @@ main {
     margin-bottom: 50px;
     background-color: #1a1919de;
     border-radius: 10px;
-    padding: 10px;
+    padding: 20px;
 }
 
 p, main figure {
