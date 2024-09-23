@@ -12,7 +12,7 @@
 body {
     font-family: sans-serif;
     background-color: rgb(12, 11, 11);
-    background-image: url(img/fu.png);
+    background-image: url(../img/fu.png);
     background-repeat: repeat;
 }
 
