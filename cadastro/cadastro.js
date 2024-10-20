@@ -38,13 +38,10 @@ document.addEventListener("DOMContentLoaded", function() {
             senha.classList.add("erro");
             valido = false;
         }
-
-        // redirecionamento após validação
-        if (valido) {
-            alert("Cadastro realizado com sucesso!");
-            setTimeout(function() {
-                window.location.href = "../home/home.html"; 
-            }, 1000); // redireciona após 1 (um) segundo
+        
+         // Se tudo estiver válido, salva os dados no localStorage
+         if (valido) {
+            salvarDados();
         }
     });
 
@@ -86,3 +83,79 @@ document.addEventListener("DOMContentLoaded", function() {
         return mensagemErro;
     }
 });
+
+    //Função para salvar os dados no localStorage    
+    document.getElementById("formulario").addEventListener ('submit',function(event) {
+    event.preventDefault(); //impede o envio do formulário
+
+    const email = document.getElementById("email").value; //oega o email inserido pelo usuário
+    const nome = document.getElementById("nome").value; //pega o nome inserido pelo usuário
+    const senha = document.getElementById("senha").value //pega a senha inserida pelo usuário
+
+    //armazena os dados no localStorage
+    localStorage.setItem("nomeUsuario", nome);
+    localStorage.setItem("emailUsuario", email);
+    localStorage.setItem("senhaUsuario", senha);
+
+    alert("Cadastro realizado");
+    //redireciona o usuário para a página inicial depois de clicar em "ok" no alert
+    window.location.href = "../home/home.html"; 
+    
+    //exibe o botão de cancelar o cadastro depois de ter os dados salvos
+    document.getElementById("cancelarCadastro").style.display = "inline";
+});
+
+    //função que cancela o cadastro (remove os dados do localStorage)
+    document.getElementById("cancelarCadastro").addEventListener("click", function() {
+        //aqui ele vai remover dados do localStorage
+        localStorage.removeItem("emailUsuario");
+        localStorage.removeItem("nomeUsuario");
+        localStorage.removeItem("senhaUsuario");
+
+        alert("Cadastro foi cancelado");
+        //redireciona o usuário para a página inicial depois de clicar em "ok" no alert
+        window.location.href = "../home/home.html"; 
+
+        //oculta o botão de cancelar o cadastro depois que os dados foram  removidos
+        document.getElementById('cancelarCadastro').style.display = "none";
+});
+
+    // Função que atualiza a exibição dos botões com base nos dados do localStorage
+    function atualizarExibirBotoes() {
+        const emailSalvo = localStorage.getItem("emailUsuario");
+        const nomeSalvo = localStorage.getItem("nomeUsuario");
+        const senhaSalva = localStorage.getItem("senhaUsuario");
+
+        const cancelarCadastro = document.getElementById("cancelarCadastro");
+        const continuarSemCadastro = document.querySelector(".continuarSemCadastro");
+        const cadastrar = document.querySelector(".cadastrob");
+
+        // Verifica se existem dados salvos
+        if (emailSalvo || nomeSalvo || senhaSalva) {
+            cadastrar.style.display = "none";
+            continuarSemCadastro.style.display = "none";
+            cancelarCadastro.style.display = "inline";
+        } else {
+            cadastrar.style.display = "inline";
+            continuarSemCadastro.style.display = "inline";
+            cancelarCadastro.style.display = "none";
+        }
+    }
+
+    // Chama a função para atualizar os botões ao carregar a página
+    atualizarExibirBotoes();
+
+    // Função para cancelar o cadastro
+    document.getElementById("cancelarCadastro").addEventListener("click", function() {
+        localStorage.removeItem("nomeUsuario");
+        localStorage.removeItem("emailUsuario");
+        localStorage.removeItem("senhaUsuario");
+
+        alert("Cadastro foi cancelado");
+
+        // Atualiza os botões após cancelar o cadastro
+        atualizarExibirBotoes();
+
+        // Redireciona para a página inicial
+        window.location.href = "../home/home.html";
+    });
