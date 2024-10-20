@@ -30,7 +30,45 @@
                     <img src="../img/index/taverna.png" alt="foto-taverna">
                 </div>
             </div>
-            <h1 class="titulo">Seja bem-vindo ao Red Dragon's Burguer!</h1>
+
+            <body>
+                <section id="container">
+            
+                    <div class="top">
+                        <h1>Busque seu CEP &#128269;</h1>
+            
+                        <p>Busque seu cep, o Site não salvará informações sobre sua localização apenas exibirá os dados.</p>
+                    </div>
+                    <div class="form-div">
+                        <form action="" id="formulario">
+                            <br>
+                            <label for=""> Digite seu CEP ->
+                                <input type="text" name="cep" placeholder=" " id="cep">
+                                <button type="button" onclick='consultarCep()'>Consultar</button>
+                                <br><label id="resposta"></label>
+                            </label>
+            
+                            <div id="hidden-show" style="display: none;">
+                                <br><br>
+                                <label for=""> Rua   </label>
+                                <input type="text" name="" placeholder=" " id="logradouro">
+            
+                                <label for="">  Bairro   </label>
+                                <input type="text" name="" placeholder=" " id="bairro">
+            
+                                <br><br>
+                                <label for=""> Cidade</label>
+                                <input type="text" name="" placeholder=" " id="localidade">
+            
+                                <label for="">Estado </label>
+                                <input type="text" name="" placeholder=" " id="uf">
+            
+                                <br>
+                            </div>
+                        </form>
+                    </div>
+                    <br>
+
         </div>
         <div class="flex">
             <div class="bloco1">
@@ -55,6 +93,7 @@
     </div>
     </div>
     </main>
+    
     <footer class="rodape">
         <figure>
             <img class="logo" src="../img/reddragon.png" alt="logo-reddragon">
