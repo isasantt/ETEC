@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cardápio</title>
     <link rel="stylesheet" href="cardapio.css">
-    <script src="event.js" defer></script>
+    
 </head>
 <body>
+
+   
+
     <header class="cabecalho">
         <img class="logo" src="../img/reddragon.png" alt="logo-reddragon">
         <strong><nav class="menu-cabecalho">
@@ -20,6 +23,13 @@
             <a href="../pedido/pedido.html"><img src="../img/carrinho.png" alt="carrinho" class="carrinho"></a>
         </nav></strong> 
     </header>
+    <div id="caloria">
+        <h1>Calculadora de calorias</h1>
+        <input type="text" id="ingrediente" placeholder="Ingrediente (queijo, carne...)">
+        <input type="number" id="quantidade" placeholder="Quantidade (g)">
+        <button id="calculadora">Calcular Calorias</button>
+        <div id="res"></div>
+    </div>
     <main>
         <div class="catalogo">
             <h1>Cardápio</h1>
@@ -80,5 +90,7 @@
             &copy; Todos os direitos reservados ao restaurante Red Dragon's Burguer</strong>
         </div>
     </footer>
+
+    <script src="cardapio.js"></script>
 </body>
 </html>
