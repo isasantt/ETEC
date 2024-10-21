@@ -101,12 +101,12 @@ body{
     z-index: 999;
 }
 
-.login-link2 {
+.continuarSemCadastro {
     margin-top: 20px;
     text-align: center;
 }
 
-.login-link2 button, .login-link2 a {
+.continuarSemCadastro button, .continuarSemCadastro a {
     text-decoration: none; 
     font-weight: bold;
     border-radius: 60px;
@@ -117,7 +117,7 @@ body{
     border: 0;
 }
 
-.login-link2 button:hover{
+.continuarSemCadastro button:hover{
     transform: scale(0.9);
 }
 
@@ -147,4 +147,19 @@ body{
 
 .erro {
     border: 1px solid rgb(121, 5, 5);
+}
+
+/* oculta o botão "cancelar cadastro" inicialmente*/
+ #cancelarCadastro {
+    background-color: rgb(121, 5, 5);
+    color: black;
+    padding: 15px 120px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9em;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.2s;
+    border: 0;
 }
