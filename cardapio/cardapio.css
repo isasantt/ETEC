@@ -119,14 +119,15 @@ h2 {
 }
 
 #caloria {
-    background-color: red;
+    background-color: rgb(121, 5, 5);
     width: 400px;
     height: 200px;
     align-items: center;
     position: relative;
-    left: 43%;
+    left: 600px;
     border-radius: 10px;
     top: 20px;
+    padding: 20px;
 }
 
 #caloria h1{
@@ -134,25 +135,40 @@ h2 {
     text-align: center;
 }
 
-#ingrediente{
-    
-}
 
 #res{
     font-size: 20px;
-    color: black;
+    color: rgb(0, 0, 0);
     font-style: italic;
 }
 
 #caloria button{
-    width: 80px;
-    border-radius: 5px;
+    width: 100px;
+    border-radius: 6px;
     text-decoration: none;
     border: none;
     position: relative;
     left: 35%;
     top: 20px;
-    cursor: pointer;
-    background-color: gray;
+    background-color: rgb(255, 255, 255);
     font-size: 15px;
+    cursor: pointer;
+    transition: 0.2s;
+    border: 0;
 }
+
+#caloria button:hover{
+    transform: scale(0.7);
+}
+
+#ingrediente{
+    height: 20px;
+    position: relative;
+}
+
+#gap{
+    gap: 15px;
+}
+
+
+
