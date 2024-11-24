@@ -11,6 +11,19 @@
     src: url(THE\ BOLD\ FONT\ -\ FREE\ VERSION\ -\ 2023.otf);
 }
 
+.titulo2 {
+    color:rgb(221, 221, 221);
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#myChart {
+    width: 600px;
+    height: 400px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
 .texto .texto1 {
         background-color: #1a1919de;     
         border-radius: 10px;  

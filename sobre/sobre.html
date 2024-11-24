@@ -6,9 +6,9 @@
     <title>Document</title>
     <link rel="stylesheet" href="sobre.css">
     <script src="sobre.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
-    
     <div class="container"></div>
     <header class="cabecalho">
         <img class="logo" src="../img/reddragon.png" alt="logo-reddragon">
@@ -23,20 +23,22 @@
         </nav></strong> 
     </header>
     <main>
-
         <div class="texto">
        
         <div class="texto1"><p>Imagine-se entrando em um reino onde a bravura dos cavaleiros e o calor das tavernas medievais se encontram em uma experiência gastronômica única. A Red Dragon é uma hamburgueria temática que transporta seus clientes para uma era de espadas, escudos e dragões. Com uma decoração que lembra os antigos salões de pedra iluminados por tochas, mesas de madeira robustas e estandartes pendurados nas paredes, cada detalhe foi pensado para envolver os visitantes em uma autêntica atmosfera medieval.</p> </div>
 
-            <div class="img"><img src="../img/sobre/medieval.jpg" alt="foto-do-restaurante">
+        <div class="img"><img src="../img/sobre/medieval.jpg" alt="foto-do-restaurante">
            <div class="texto2"><p>O cardápio é igualmente inspirado na época, com hambúrgueres batizados com nomes de lendas e heróis, como o "Excalibur" e o "Dragão Vermelho". As carnes são suculentas e grelhadas no ponto perfeito, acompanhadas por ingredientes frescos e combinações de sabores dignas de um banquete real. Para completar, canecas de cerveja artesanal e hidromel são servidas para brindar à coragem e à amizade.</p> </div>
 
            <div class="img"><img src="../img/sobre/hamburguer.jpg" alt="foto-do-hamburguer">
            <div class="texto3"><p>Na <strong>Red Dragon</strong>, cada refeição é uma aventura, onde o passado ganha vida em cada mordida. Seja para comemorar uma vitória, compartilhar histórias com amigos ou simplesmente desfrutar de um banquete épico, esta hamburgueria promete uma experiência memorável para todos que cruzarem suas portas.</p> </div>
            </div>
         </div>
-
-</main>
+    </main>
+    <div class="titulo2">
+        <h2>A Hamburgueria mais visitada de São Paulo!</h2>
+    </div>
+    <canvas id="myChart"></canvas>
     <footer class="rodape">
         <figure>
             <img class="logo" src="../img/reddragon.png" alt="logo-reddragon">
@@ -46,5 +48,32 @@
             &copy; Todos os direitos reservados ao restaurante Red Dragon's Burguer</strong>
         </div>
     </footer>
+    <script>
+        const xValues = ["Mc Donald's", "Burguer King", "Alexandria", "Red Dragon"];
+const yValues = [27, 13, 5, 65];
+const barColors = [
+    "#ffccff",
+    "#99ccff",
+    "#ffffcc",
+    "#ccff99"
+];
+
+new Chart("myChart", {
+    type: "pie",
+    data: {
+        labels: xValues,
+        datasets: [{
+            backgroundColor: barColors,
+            data: yValues
+        }]
+    },
+    options: {
+        title: {
+            display: true,
+            text: "A Hamburgueria mais visitada de São Paulo"
+        }
+    }
+});
+    </script>
 </body>
 </html>
