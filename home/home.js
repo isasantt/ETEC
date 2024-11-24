@@ -97,5 +97,3 @@ if (!localStorage.getItem('alertShown')) {
 }
 
 );
-
-
