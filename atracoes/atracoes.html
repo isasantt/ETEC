@@ -5,11 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atrações</title>
     <link rel="stylesheet" href="atracoes.css">
+    <!-- carrega a biblioteca de gráficos do google -->
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+
 </head>
 <body>
     <header class="cabecalho">
         <img class="logo" src="../img/reddragon.png" alt="logo-reddragon">
-        <strong><nav class="menu-cabecalho">
+        <strong>
+            <nav class="menu-cabecalho">
             <a href="../home/home.html">Home</a>
             <a href="../sobre/sobre.html">Sobre</a>
             <a href="../ajuda/ajuda.html">Ajuda</a>    
@@ -17,9 +21,12 @@
             <a href="../atracoes/atracoes.html">Atrações</a>
             <a href="../cadastro/cadastro.html">Cadastro</a>
             <a href="../pedido/pedido.html"><img src="../img/carrinho.png" alt="carrinho" class="carrinho"></a>
-        </nav></strong> 
+        </nav>
+        </strong> 
     </header>
+
     <main>
+        <h1>Nossas Atrações</h1>
         <p>No coração do nosso restaurante medieval, além dos hambúrgueres épicos, oferecemos atrações que transportam nossos convidados para uma verdadeira aventura!</p>
 
         <figure>
@@ -41,7 +48,61 @@
         <p>Dardos – Desafie seus amigos em partidas de dardos temáticas, inspiradas em torneios medievais. Mostre sua precisão e vença como um verdadeiro campeão de tavernas, enquanto desfruta de boas bebidas e petiscos.</p>
         
         <p>Essas atrações tornam a experiência em nosso restaurante única, misturando o sabor dos tempos antigos com diversão e competição!</p>
+        
+        <div class="grafico">
+        <div id="myChart" style="width:100%; max-width:600px; height:500px;"></div>
+        </div>
     </main>
+
+ 
+<!--Gráfico-->
+<script>
+google.charts.load('current', {'packages':['corechart']});
+//chama a funçao drawChart que carrega os dados do gráfico
+google.charts.setOnLoadCallback(drawChart);
+
+//define os dados
+function drawChart() {
+
+const data = google.visualization.arrayToDataTable([
+    ['Atrações', 'Popularidade'],
+    ["Artilharia",52],
+    ["Dardos",22],
+    ["RPG",36],
+]);
+
+// configurações do gráfico 
+const options = {
+    title: "Popularidade das atrações",
+    backgroundColor: 'transparent', 
+    chartArea: { backgroundColor: 'transparent' }, // define a área que tem q estar transparente
+    //fonte do titulo
+    titleTextStyle: {
+        color: 'red', 
+        fontSize: 20,  
+    },
+    //fonte das fatias
+    sliceTextStyle: {
+        color: 'white',
+        fontSize: 14, 
+    },
+    //fonte da legenda
+    legend: {
+        textStyle: {
+            color: 'white', // Cor do texto da legenda
+        },
+    },
+    
+};
+
+// montagem do gráfico
+const chart = new google.visualization.PieChart(document.getElementById('myChart'));
+chart.draw(data, options);
+
+}
+</script>
+
+
     <footer class="rodape">
         <figure>
             <img class="logo" src="../img/reddragon.png" alt="logo-reddragon">
@@ -51,5 +112,6 @@
             &copy; Todos os direitos reservados ao restaurante Red Dragon's Burguer</strong>
         </div>
     </footer>
+    
 </body>
 </html>
