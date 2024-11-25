@@ -38,7 +38,7 @@
     <div class="titulo2">
         <h2>A Hamburgueria mais visitada de São Paulo!</h2>
     </div>
-    <canvas id="myChart"></canvas>
+    <canvas id="chart"></canvas>
     <footer class="rodape">
         <figure>
             <img class="logo" src="../img/reddragon.png" alt="logo-reddragon">
@@ -49,31 +49,31 @@
         </div>
     </footer>
     <script>
-        const xValues = ["Mc Donald's", "Burguer King", "Alexandria", "Red Dragon"];
-const yValues = [27, 13, 5, 65];
-const barColors = [
-    "#ffccff",
-    "#99ccff",
-    "#ffffcc",
-    "#ccff99"
-];
+        const xValores = ["Mc Donald's", "Burguer King", "Alexandria", "Red Dragon"];
+        const yValores = [27, 13, 5, 65];
+        const barCores = [
+            "#ffccff",
+            "#99ccff",
+            "#ffffcc",
+            "#ccff99"
+        ];
 
-new Chart("myChart", {
-    type: "pie",
-    data: {
-        labels: xValues,
-        datasets: [{
-            backgroundColor: barColors,
-            data: yValues
-        }]
-    },
-    options: {
-        title: {
-            display: true,
-            text: "A Hamburgueria mais visitada de São Paulo"
+        new Chart("chart", {
+            type: "pie",
+            data: {
+                labels: xValores,
+                datasets: [{
+                    backgroundColor: barCores,
+                    data: yValores
+                }]
+            },
+        options: {
+            title: {
+                display: true,
+                text: "A Hamburgueria mais visitada de São Paulo"
+            }
         }
-    }
-});
+        });
     </script>
 </body>
 </html>
