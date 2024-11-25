@@ -77,3 +77,10 @@ img {
     text-align: right;
     margin-right: 25px;
 }
+
+.grafico {
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    height: 500px;         
+}
