@@ -23,6 +23,7 @@
             <a href="../pedido/pedido.html"><img src="../img/carrinho.png" alt="carrinho" class="carrinho"></a>
         </nav></strong> 
     </header>
+
     <div id="caloria">
         <h1>Calculadora de calorias</h1>
         <div id="gap">
@@ -32,6 +33,10 @@
         <button id="calculadora">Calcular Calorias</button>
         <div id="res"></div>
     </div>
+
+
+
+
     <main>
         <div class="catalogo">
             <h1>Cardápio</h1>
@@ -82,6 +87,44 @@
                 </li>
             </ul>
         </div>
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+     <canvas id="myChart" style="width:100%;max-width:1000px"></canvas>        
+            <script>
+        const xValues = ["O Templário", "Ragnarok", "Mestre Paladino", "Elfo Noturno"];
+        const yValues = [140, 200, 157, 231,];
+        const barColors = [
+          "#b91d47",
+          "#cf4e5b",
+          "#ff1c33",
+          "#801b25",
+
+        ];
+        new Chart("myChart", {
+          type: "doughnut",
+          data: {
+            labels: xValues,
+            datasets: [{
+              backgroundColor: barColors,
+              data: yValues
+            }]
+          },
+          options: {
+            title: {
+                display: true,
+                text: "Os Hambúrgueres mais pedidos no mês",
+                fontColor: "#ffffff"
+            },
+            legend: {
+                labels: {
+                    fontColor: "#ffffff" 
+                }
+            },
+        }
+    });
+</script>
+    <br>
+    
     </main>
     <footer class="rodape">
         <figure>
